@@ -15,7 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Configuration
 public class TaskConfig {
 
-    @Bean
+    @Bean // @Bean injects this object (TaskExecutor) into the Spring Context
     TaskExecutor taskExecutor(){
         return new SimpleAsyncTaskExecutor();
     }

@@ -14,12 +14,12 @@ import java.util.List;
 /**
  * Created by jt on 2019-05-12.
  */
-public class BeerPagedList extends PageImpl<guru.sfg.brewery.model.BeerDto> implements Serializable {
+public class BeerPagedList extends PageImpl<BeerDto> implements Serializable {
 
     static final long serialVersionUID = 1114715135625836949L;
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public BeerPagedList(@JsonProperty("content") List<guru.sfg.brewery.model.BeerDto> content,
+    public BeerPagedList(@JsonProperty("content") List<BeerDto> content,
                          @JsonProperty("number") int number,
                          @JsonProperty("size") int size,
                          @JsonProperty("totalElements") Long totalElements,
@@ -33,7 +33,7 @@ public class BeerPagedList extends PageImpl<guru.sfg.brewery.model.BeerDto> impl
         super(content, PageRequest.of(number, size), totalElements);
     }
 
-    public BeerPagedList(List<guru.sfg.brewery.model.BeerDto> content, Pageable pageable, long total) {
+    public BeerPagedList(List<BeerDto> content, Pageable pageable, long total) {
         super(content, pageable, total);
     }
 
