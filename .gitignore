@@ -53,7 +53,8 @@ local.properties
 # Intellij
 ######################
 .idea/
-target/
+target/*
+/target/*
 *.iml
 *.iws
 *.ipr

@@ -1,8 +1,7 @@
 package guru.springframework.msscbeerservice.services;
 
-import guru.sfg.brewery.model.BeerDto;
-import guru.sfg.brewery.model.BeerPagedList;
-import guru.sfg.brewery.model.BeerStyleEnum;
+import guru.springframework.msscbeerservice.web.model.BeerPagedList;
+import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
 import guru.springframework.msscbeerservice.domain.Beer;
 import guru.springframework.msscbeerservice.repositories.BeerRepository;
 import guru.springframework.msscbeerservice.web.controller.NotFoundException;
