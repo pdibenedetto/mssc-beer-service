@@ -36,7 +36,7 @@ import guru.springframework.msscbeerservice.domain.Beer;
 import guru.sfg.brewery.model.events.BrewBeerEvent;
 import guru.sfg.brewery.model.events.NewInventoryEvent;
 import guru.springframework.msscbeerservice.repositories.BeerRepository;
-import guru.springframework.msscbeerservice.web.model.BeerDto;
+import guru.sfg.brewery.model.BeerDto;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
